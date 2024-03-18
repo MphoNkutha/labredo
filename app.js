@@ -5,11 +5,10 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log("Server Listening on PORT:", port);
 });
-app.get(“/status”, ());
-app.get(“/status”, (request, response));
-app.get(“/status”, (request, response) => {
+
+app.get("/status", (request, response) => {
    const status = {
-      “Status”: “Running”
+      "Status": "Running"
    };
    
    response.send(status);
